@@ -19,7 +19,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="+svg"
 
 RDEPEND="
-	dev-python/beautifulsoup:python-2
+	dev-python/beautifulsoup:python2
 	dev-python/feedparser
 	dev-python/dbus-python
 	dev-python/gconf-python
