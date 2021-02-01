@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_5 python3_6 python3_7)
+PYTHON_COMPAT=( python3_5 python3_6 python3_7 python3_8)
 VALA_MIN_API_VERSION=0.20
 VALA_USE_DEPEND=vapigen
 
@@ -51,8 +51,6 @@ DOCS=(AUTHORS COPYING COPYING.LGPL COPYING.LGPL-2.1 ChangeLog NEWS README TODO)
 src_prepare(){
 	sed -i 's/-Werror//' configure.ac
 	sed -i 's/tests//' Makefile.am
-	eapply "${FILESDIR}/${PN}-0.5.0-disable-gtester2xunit-check.patch"
-	eapply "${FILESDIR}/${PN}-0.5.0-remove-desktop-fullname.patch"
 	eautoreconf
 	vala_src_prepare
 	default
