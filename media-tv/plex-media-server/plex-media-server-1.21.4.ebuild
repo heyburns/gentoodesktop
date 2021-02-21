@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python2_7 )
 inherit eutils systemd unpacker pax-utils
 
-MINOR_VERSION="3583-309e93364"
+MINOR_VERSION="4054-bab510e86"
 
 _APPNAME="plexmediaserver"
 _USERNAME="plex"
@@ -46,10 +46,6 @@ BINS_TO_PAX_MARK=(
 )
 
 S="${WORKDIR}"
-PATCHES=(
-	"${FILESDIR}/plexmediamanager.desktop.new.patch"
-	"${FILESDIR}/plexmediaserver.service.patch"
-)
 
 src_unpack() {
 	unpack_deb ${A}
