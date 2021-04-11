@@ -22,9 +22,10 @@ RDEPEND="dev-java/apple-java-extensions-bin:0
 	dev-java/upnplib:0"
 DEPEND="${RDEPEND}
 	>=virtual/jdk-1.7
-	app-arch/unzip"
+	app-arch/unzip
+	test? ( dev-java/ant-junit:0 )"
 RDEPEND="${RDEPEND}
-	>=virtual/jre-1.7"
+	>=virtual/jre-1.8"
 
 S=${WORKDIR}/${PN}_${MY_PV}
 
