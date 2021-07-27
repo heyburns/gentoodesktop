@@ -1,8 +1,1 @@
-app-admin/conky-manager
-app-emulation/genymotion-bin
-media-video/lightworks
-x11-misc/mate-tweak
-x11-misc/plank
-x11-plugins/compiz-plugins-extra
-x11-plugins/screenlets
-x11-wm/compiz-meta
+This is a little overlay that's designed to complement the Mate desktop on Gentoo by providing some essential utilities and apps that are missing from Portage. These are all apps that I personally use on my systems, and whatever I need at any given time will dictate what's in here. Apps will come and go as things break or I stop using them, so if there's something you want to be sure you always have, I recommend cloning or forking it. You're welcome to use it if you want, but understand that I don't support it and nothing is guaranteed to work for you. If you want to use it, it's essential that you set ACCEPT_KEYWORDS="~amd64" globally.
