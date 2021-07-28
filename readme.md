@@ -2,16 +2,3 @@ This is a little overlay that's designed to complementthe Mate desktop on Gentoo
 
 To add it to your system execute the following as root.
 
-cat <<EOF > /etc/portage/repos.conf/heyburns.conf
-[heyburns]
-
-# Various utilities and apps for Mate on Gentoo 
-# Maintainer: Alan Burns (alan.burns at icloud dot com)
-location = /var/db/repos/heyburns
-sync-type = git
-sync-uri = https://github.com/heyburns/gentoodesktop
-priority = 50
-auto-sync = yes
-EOF
-  
-emaint sync --repo heyburns
